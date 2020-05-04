@@ -13,3 +13,8 @@ def fetch_compliments():
 
 def give_compliment(compliments: list) -> list:
     return random.choice(compliments)
+
+
+def print_compliment():
+    cs = fetch_compliments()
+    print("🍕 {}".format(give_compliment(cs)))
